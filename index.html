@@ -8,22 +8,26 @@
     <title>Wifi</title>
   </head>
   <body>
-    <section class="section">
+    <section class="section advance-settings-mobile">
       <div class="heading-container">
         <h1 class="heading-title">2.4 GHz</h1>
       </div>
       <div class="top-container">
         <div class="row">
-          <div class="col-1-2 col">
+          <div class="col">
             <label for="">Wi-Fi Name</label>
             <input type="text" placeholder="Wi-Fi Default" />
           </div>
-          <div class="col-2-2 col">
+          <div class="col">
             <label for="">Wi-Fi Password</label>
-            <input type="text" placeholder="Wi-Fi Password" />
+            <input
+              type="text"
+              placeholder="Wi-Fi Password"
+              class="margin-bottom-2"
+            />
           </div>
         </div>
-        <div class="row">
+        <div class="row-mobile">
           <div class="col">
             <h3 class="heading-title-sub">Advance Settings</h3>
           </div>
@@ -35,7 +39,7 @@
 
       <div class="bottom-container">
         <div class="row">
-          <div class="col-1-2 col">
+          <div class="col">
             <label for="">SSID Number</label>
             <select name="" id="">
               <option value="1">1</option>
@@ -43,9 +47,9 @@
               <option value="3">3</option>
             </select>
           </div>
-          <div class="col-2-2 col">
+          <div class="col">
             <label for="">Authentication</label>
-            <select name="" id="">
+            <select name="" id="" class="margin-bottom-2">
               <option value="WPA / WPA2">WPA / WPA2</option>
               <option value="WPA2">WPA2</option>
             </select>
@@ -53,15 +57,14 @@
         </div>
 
         <div class="row">
-          <div class="col-1-2 col">
+          <div class="col">
             <label for="">Encryption Mode</label>
             <select name="" id="">
               <option value="TKIP">TKIP</option>
               <option value="AES">AES</option>
             </select>
           </div>
-
-          <div class="col-2-2 col">
+          <div class="col">
             <label for="">WPA Key Interval</label>
             <input type="text" placeholder="3600" />
           </div>

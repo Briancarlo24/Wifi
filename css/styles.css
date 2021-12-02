@@ -30,6 +30,12 @@ body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
   background-color: var(--grey-lighter);
+  padding: 2rem;
+}
+@media (max-width: 475px) {
+  body {
+    padding: 1rem;
+  }
 }
 
 .heading-container {
@@ -69,7 +75,7 @@ body {
 .section {
   border-radius: 15px;
   overflow: hidden;
-  width: 72rem;
+  max-width: 72rem;
   height: 50.2rem;
   margin: 10rem auto;
   box-shadow: 0px 0px 4px var(--grey-light);
@@ -93,11 +99,33 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 475px) {
+  .section {
+    height: auto;
+  }
+  .top-container {
+    height: auto;
+  }
+  .bottom-container {
+    height: auto;
+  }
+}
+
 /* GLOBAL STYLES */
 .row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+}
+.row-mobile {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media (max-width: 475px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
 }
 .col {
   display: flex;
@@ -128,6 +156,13 @@ select {
   background-color: var(--color-input);
 }
 
+/*  Utilities -- Only used on mobile */
+@media (max-width: 475px) {
+  .margin-bottom-2 {
+    margin-bottom: 2rem;
+  }
+}
+
 /* Javascript Class */
 .hidden {
   display: none;
@@ -136,6 +171,13 @@ select {
 .rotate-180 {
   transform: rotate(180deg);
 }
-.advance-settings {
-  height: 26rem;
+@media (min-width: 476px) {
+  .advance-settings {
+    height: 26rem;
+  }
+}
+@media (max-width: 475px) {
+  .advance-settings-mobile {
+    height: auto;
+  }
 }

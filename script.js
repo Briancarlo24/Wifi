@@ -8,4 +8,5 @@ icon.addEventListener("click", function () {
   icon.classList.toggle("rotate-180");
   advanceSettings.classList.toggle("hidden");
   section.classList.toggle("advance-settings");
+  section.classList.toggle("advance-settings-mobile");
 });
