@@ -102,6 +102,7 @@ body {
 @media (max-width: 475px) {
   .section {
     height: auto;
+    min-width: 275px;
   }
   .top-container {
     height: auto;
