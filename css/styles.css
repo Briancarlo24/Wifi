@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --white: #ffffff;
+  --blue-light: #f0f5fa;
+  --blue-dark: #193b65;
+
+  --grey-light: rgba(25, 59, 101, 0.1);
+  --grey-lighter: rgba(25, 59, 101, 0.05);
+  --text-dark: #3b4358;
+
+  --color-input: #fbfcff;
+  --color-input-border: #d6deeb;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--grey-lighter);
+}
+
+.heading-container {
+  border-bottom: 1px solid var(--grey-light);
+  padding: 2.4rem 3.2rem;
+  background-color: var(--white);
+}
+/* Rectangle 1196 */
+
+.heading-title {
+  font-size: 2.4rem;
+  color: var(--blue-dark);
+}
+
+.heading-title-sub {
+  color: var(--blue-dark);
+  opacity: 0.5;
+  font-size: 1.5rem;
+}
+
+.icon-container {
+  width: 2rem;
+  justify-self: flex-end;
+  transition: all 0.2s ease-out;
+}
+
+.icon {
+  width: 100%;
+  cursor: pointer;
+  filter: invert(21%) sepia(11%) saturate(4726%) hue-rotate(179deg)
+    brightness(88%) contrast(93%);
+  opacity: 0.5;
+}
+
+/* Layout */
+
+.section {
+  border-radius: 15px;
+  overflow: hidden;
+  width: 72rem;
+  height: 50.2rem;
+  margin: 10rem auto;
+  box-shadow: 0px 0px 4px var(--grey-light);
+  transition: all 0.2s ease-out;
+}
+
+.top-container {
+  background-color: var(--white);
+  padding: 2.4rem 3.2rem;
+  height: 18.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom-container {
+  background-color: var(--blue-light);
+  padding: 2.4rem 3.3rem 3.2rem;
+  height: calc(50.2rem - 25.4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* GLOBAL STYLES */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+::placeholder {
+  color: var(--blue-dark);
+  font-size: bold;
+}
+select {
+  color: var(--blue-dark);
+  font-size: bold;
+}
+label {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+input,
+select {
+  border-radius: 5px;
+  border: 1px solid var(--color-input-border);
+  height: 5.3rem;
+  padding-left: 1rem;
+  background-color: var(--color-input);
+}
+
+/* Javascript Class */
+.hidden {
+  display: none;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+.advance-settings {
+  height: 26rem;
+}
