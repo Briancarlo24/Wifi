@@ -43,7 +43,6 @@ body {
   padding: 2.4rem 3.2rem;
   background-color: var(--white);
 }
-/* Rectangle 1196 */
 
 .heading-title {
   font-size: 2.4rem;
@@ -67,6 +66,23 @@ body {
   cursor: pointer;
   filter: invert(21%) sepia(11%) saturate(4726%) hue-rotate(179deg)
     brightness(88%) contrast(93%);
+  opacity: 0.5;
+}
+.icon-eye-container {
+  position: relative;
+  display: block;
+  border: 1px solid lightpink;
+}
+.input-pass {
+  display: block;
+  width: 100%;
+}
+.icon-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+  color: var(--blue-dark);
   opacity: 0.5;
 }
 

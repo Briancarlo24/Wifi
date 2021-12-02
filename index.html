@@ -20,11 +20,14 @@
           </div>
           <div class="col">
             <label for="">Wi-Fi Password</label>
-            <input
-              type="text"
-              placeholder="Wi-Fi Password"
-              class="margin-bottom-2"
-            />
+            <div class="margin-bottom-2 icon-eye-container">
+              <input
+                type="text"
+                placeholder="Wi-Fi Password"
+                class="input-pass"
+              />
+              <ion-icon class="icon-eye" name="eye-outline"></ion-icon>
+            </div>
           </div>
         </div>
         <div class="row-mobile">
@@ -32,7 +35,8 @@
             <h3 class="heading-title-sub">Advance Settings</h3>
           </div>
           <div class="icon-container col">
-            <img src="images/chevron-up-outline.svg" alt="" class="icon" />
+            <!-- <img src="images/chevron-up-outline.svg" alt="" class="icon" /> -->
+            <ion-icon name="chevron-up-outline" class="icon"></ion-icon>
           </div>
         </div>
       </div>
@@ -71,7 +75,14 @@
         </div>
       </div>
     </section>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
